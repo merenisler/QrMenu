@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header .baslik{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.header .baslik img{
+    width: 30%;
+    float: left;
+}
+.header .baslik h1{
+    float: left;
+    text-align: center;
+    color: red;
+    padding-top: 10%;
+    padding-left: 5%;
+    font-size: 32px;
+    font-weight: 700;
+}
+.header .baslik h1 p{
+    font-size: 15px;
+}
+.buttons ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 13em 0;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.buttons ul li {
+    margin: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.buttons ul a{
+    text-decoration: none;
+}
+.buttons ul li a button{
+display: inline-block;
+outline: none;
+cursor: pointer;
+font-size: 20px;
+line-height: 20px;
+font-weight: 600;
+border-radius: 6px;
+padding: 15px 40px;
+border: none;
+transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+color: #fff;
+}
+.buyukBaslik{
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.buyukBaslik h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.afis{
+    position: relative;
+    width: 100%;
+}
+.yemek{
+    width: 90%;
+    border-radius: 12px;
+    height: 100%;
+    background: #c2c2c2b9;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.yemek .isim{
+    text-align: center;
+}
+.yemek .isim h1{
+    font-style: italic;
+    padding-top: 15px;
+}
+.yemek .resim img{
+    width: 100%;
+    padding-top: 5px;
+}
+.yemek .fiyatlar{
+    text-align: center;
+    align-items: center;
+    margin-top: 1em;
+}
+.yemek .fiyatlar p{
+    margin: -5px;
+    font-size: 1.5em;
+}
+.icecek{
+    width: 90%;
+    border-radius: 12px;
+    height: 100%;
+    background: #c2c2c2b9;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.icecek .isim{
+    text-align: center;
+}
+.icecek .isim h1{
+    font-style: italic;
+    padding-top: 15px;
+}
+.icecek .resim img{
+    width: 100%;
+}
+.icecek .fiyatlar{
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+}
+.icecek .fiyatlar p{
+    font-size: 1.5em;
+}
+
+@media only screen and (min-width : 350px) and (max-width : 375px){
+    .header .baslik img{
+        width: 29%;
+        float: left;
+    }
+    .header .baslik h1{
+        padding-top: 9%;
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width : 300px) and (max-width : 350px){
+    .header .baslik img{
+        width: 28%;
+        float: left;
+    }
+    .header .baslik h1{
+        padding-top: 8%;
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width : 270px) and (max-width : 300px){
+    .header .baslik img{
+        width: 27%;
+        float: left;
+    }
+    .header .baslik h1{
+        padding-top: 8%;
+        font-size: 22px;
+    }
+    .buyukBaslik h1{
+        font-size: 33px;
+    }
+    .yemek .fiyatlar p{
+        margin: -5px;
+        font-size: 1.3em;
+    }
+}
+@media only screen and (min-width : 250px) and (max-width : 270px){
+    .header .baslik img{
+        width: 27%;
+        float: left;
+    }
+    .header .baslik h1{
+        padding-top: 8%;
+        font-size: 22px;
+    }
+    .buyukBaslik h1{
+        font-size: 30px;
+    }
+    .yemek .fiyatlar p{
+        margin: -5px;
+        font-size: 1.1em;
+    }
+    .icecek .fiyatlar p{
+        margin: -5px;
+        font-size: 1.1em;
+    }
+}
+@media only screen and (min-width : 230px) and (max-width : 250px){
+    .header .baslik{
+        align-items: center;
+    }
+    .header .baslik img{
+        width: 29%;
+        margin-left: 31%;
+        align-items: center;
+        text-align: center;
+    }
+    .header .baslik h1{
+        padding-top: 8%;
+        margin-left: 4%;
+        font-size: 25px;
+        text-align: center;
+    }
+    .buyukBaslik h1{
+        font-size: 29px;
+    }
+    .yemek .fiyatlar p{
+        margin: -5px;
+        font-size: 1.1em;
+    }
+    .icecek .fiyatlar p{
+        margin: -5px;
+        font-size: 1.1em;
+    }
+}
+@media only screen and (min-width : 210px) and (max-width : 230px){
+    .header .baslik{
+        align-items: center;
+    }
+    .header .baslik img{
+        width: 29%;
+        margin-left: 31.5%;
+        align-items: center;
+        text-align: center;
+    }
+    .header .baslik h1{
+        padding-top: 8%;
+        margin-left: 2.5%;
+        font-size: 23px;
+        text-align: center;
+    }
+    .buyukBaslik h1{
+        font-size: 28px;
+    }
+    .yemek .fiyatlar p{
+        margin: -5px;
+        font-size: 1em;
+    }
+    .icecek .fiyatlar p{
+        margin: -5px;
+        font-size: 1em;
+    }
+}
